@@ -110,6 +110,20 @@ header h1 {
    padding: 16px 12px 16px 16px;
 }
 
+.studio-list .studio-card:nth-child(2) img[src*="Group1.2.png"] {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Mobile-specific size limit */
+@media (max-width: 600px) {
+  .studio-list .studio-card:nth-child(2) img[src*="Group1.2.png"] {
+    max-width: 80vw; 
+    height: auto;
+  }
+}
 .mon{
   height: 55px;
   width: 35px;
