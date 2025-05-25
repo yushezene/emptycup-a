@@ -4,8 +4,8 @@
     "description": "Passionate team of 4 designers working out of Bangalore with an experience of 4 years.",
     "projects": 57,
     "years": 8,
-    "priceIcon": "$$.png",
-    "stars": "Group 1.png",
+    "priceIcon": "img/$$.png",
+    "stars": "img/Group 1.png",
     "phones": ["+91 - 984532853", "+91 - 984532854"]
   },
   {
@@ -13,8 +13,8 @@
     "description": "Passionate team of 4 designers working out of Bangalore with an experience of 4 years.",
     "projects": 43,
     "years": 6,
-    "priceIcon": "$$$.png",
-    "stars": "Group1.2.png",
+    "priceIcon": "img/$$$.png",
+    "stars": "img/Group1.2.png",
     "phones": ["+91 - 984532853", "+91 - 984532854"]
   }
 ]

@@ -29,24 +29,24 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
           <div class="divider"></div>
           <div class="card-actions">
-            <div class="action"><img src="Details.png" alt="Details" /></div>
-            <div class="action"><img src="Hide.png" alt="Hide" /></div>
-            <div class="action shortlist-btn"><img src="Shortlist2.png" alt="Shortlist" /></div>
-            <div class="action"><img src="Report.png" alt="Report" /></div>
+            <div class="action"><img src="img/Details.png" alt="Details" /></div>
+            <div class="action"><img src="img/Hide.png" alt="Hide" /></div>
+            <div class="action shortlist-btn"><img src="img/Shortlist2.png" alt="Shortlist" /></div>
+            <div class="action"><img src="img/Report.png" alt="Report" /></div>
           </div>
         `;
         listContainer.appendChild(card);
       });
 
-      // Now after elements exist, add event listeners for shortlist buttons
+      // 
       const shortlistButtons = document.querySelectorAll(".shortlist-btn");
 
       shortlistButtons.forEach(button => {
         const img = button.querySelector("img");
         const card = button.closest(".studio-card");
 
-        // Set initial shortlisted state based on icon (you can adjust initial here)
-        const isShortlisted = img.src.includes("Shortlist.png"); 
+        // initial 
+        const isShortlisted = img.src.includes("img/Shortlist.png"); 
         if (isShortlisted) {
           card.classList.add("shortlisted");
         } else {
@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
           // Update icon
           if (card.classList.contains("shortlisted")) {
-            img.src = "Shortlist.png"; // filled icon
+            img.src = "img/Shortlist.png"; // filled icon
           } else {
-            img.src = "Shortlist2.png"; // outline icon
+            img.src = "img/Shortlist2.png"; // outline icon
           }
 
           if (isFilterOn) {
@@ -70,14 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-  // Filter toggle event
+  // toggle
   shortlistFilter.addEventListener("click", function () {
     isFilterOn = !isFilterOn;
     shortlistFilter.classList.toggle("active");
     filterShortlisted();
   });
 
-  // Filter function
+  // 
   function filterShortlisted() {
     const allCards = document.querySelectorAll(".studio-card");
 
